@@ -1,0 +1,45 @@
+#body{
+    background-color:rgb(176, 131, 72);
+}
+#clockbody{
+    position: relative;
+    margin: auto;
+    background-color: red;
+    
+    
+    height: 40vw;
+    width: 40vw;
+    background: url(clockbody.jpg) no-repeat;
+    background-size: 100%;
+}
+#hours,#min,#seconds{
+    
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hours{
+    background: black;
+    height: 8vw;
+    width: 0.5vw;
+    left: 49.8%;
+    top: 28%;
+   
+}
+#min
+{
+    background: black;
+    height: 9vw;
+    width: 0.5vw;
+    left: 49.55%;
+    top: 25.7%;
+     
+}
+#seconds{
+    background: black;
+    height: 10vw;
+    width: 0.5vw;
+    left: 49.5%;
+    top: 23%;
+    
+}

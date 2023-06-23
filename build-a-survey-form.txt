@@ -1,0 +1,143 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+   <title>Survey Form </title>
+   <link rel='stylesheet' href='styles.css'>
+   <meta charset='UTF-8'>
+  </head>
+  <body>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform</p>
+
+    <form id='survey-form'>
+      <fieldset>
+        <label for='name' id="name-label">Name<input type='text' id='name' placeholder='Enter your name' required/></label>
+        <label for='email' id="email-label">Email<input type='email' id='email' placeholder='Enter your Email' required/></label>
+        <label for='number' id="number-label">Age(optional)<input type='number' id='number' min='12' max='120' placeholder='Age'/></label>
+      </fieldset>
+      <fieldset>
+        <label for='dropdown'>Which option best describes your current role?
+          <select id='dropdown'>
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label id='radio'>
+          Would you recommend freeCodeCamp to a friend?
+          <label display='block'><input type='radio' name='radio' value='definitely' class='inline'/>Definitely</label>
+          <label display='block'><input type='radio' name='radio' value='maybe' class='inline'/>Maybe</label>
+          <label display='block'><input type='radio' name='radio' value='notsure' class='inline'/>Not sure</label>
+</label>
+        <label for='dropdown'>What is your favorite feature of freeCodeCamp?
+          <select id='dropdown'>
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          What would you like to see improved? (Check all that apply)
+          <label display='block'><input type='checkbox' value='frontend'/>Front-end Projects</label>
+          <label display='block'><input type='checkbox' value='backend'/>Back-end Projects</label>
+          <label display='block'><input type='checkbox' value='datavisualization'/>Data Visualization</label>
+          <label display='block'><input type='checkbox' value='challenges'/>Challenges</label>
+          <label display='block'><input type='checkbox' value='opensource'/>Open Source Community</label>
+          <label display='block'><input type='checkbox' value='gitter'/>Gitter help rooms</label>
+          <label display='block'><input type='checkbox' value='videos'/>Videos</label>
+          <label display='block'><input type='checkbox' value='citymeetups'/>City Meetups</label>
+          <label display='block'><input type='checkbox' value='wiki'/>Wiki</label>
+          <label display='block'><input type='checkbox' value='forum'/>Forum</label>
+          <label display='block'><input type='checkbox' value='additionalcourses'/>Additional Courses</label>
+        </label>
+        <label>
+          Any comments or suggestions?
+          <textarea rows='4' cols='30'></textarea>
+        </label>
+        <input type='submit' value='Submit' id='submit'>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color:lightblue;
+  color: black;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+h1,p{
+  margin:0 auto;
+  text-align:center;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color:#1b1b32;
+  color:white;
+  padding-left:15px;
+  padding-right:15px;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+.inline{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input[type='checkbox']{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+** end of undefined **
+
